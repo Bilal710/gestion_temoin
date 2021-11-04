@@ -1,0 +1,93 @@
+<?php //App.Entity.Enseigner
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\DateTime'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\DateTime')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\DateTime'],
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\GreaterThan'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\GreaterThan')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Enseigner',
+                'startAt',
+                3 => 'endAt',
+            ],
+            'defaultGroup' => [
+                'Enseigner',
+            ],
+            'members' => [
+                [
+                    'startAt' => [
+                        $o[1],
+                    ],
+                    'endAt' => [
+                        $o[3],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'startAt' => $o[1],
+                    'endAt' => $o[3],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Enseigner',
+                3 => 'App\\Entity\\Enseigner',
+            ],
+            'property' => [
+                1 => 'startAt',
+                3 => 'endAt',
+            ],
+            'constraints' => [
+                1 => [
+                    $o[2],
+                ],
+                3 => [
+                    $o[4],
+                    $o[5],
+                ],
+            ],
+            'constraintsByGroup' => [
+                1 => [
+                    'default' => [
+                        $o[2],
+                    ],
+                ],
+                3 => [
+                    'default' => [
+                        $o[4],
+                    ],
+                    'Default' => [
+                        $o[5],
+                    ],
+                    'Enseigner' => [
+                        $o[5],
+                    ],
+                ],
+            ],
+            'groups' => [
+                2 => [
+                    'default',
+                ],
+                4 => [
+                    'default',
+                ],
+                [
+                    'Default',
+                    'Enseigner',
+                ],
+            ],
+            'propertyPath' => [
+                5 => 'startAt',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

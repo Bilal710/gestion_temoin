@@ -1,0 +1,258 @@
+<?php //App__Entity__Users__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Users',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Users',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\UsersRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'firstName' => [
+                        'fieldName' => 'firstName',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'first_name',
+                    ],
+                    'lastName' => [
+                        'fieldName' => 'lastName',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'last_name',
+                    ],
+                    'sexe' => [
+                        'fieldName' => 'sexe',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 1,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'sexe',
+                    ],
+                    'naissanceAt' => [
+                        'fieldName' => 'naissanceAt',
+                        'type' => 'datetime',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'naissance_at',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'first_name' => 'firstName',
+                    'last_name' => 'lastName',
+                    'sexe' => 'sexe',
+                    'naissance_at' => 'naissanceAt',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'firstName' => 'first_name',
+                    'lastName' => 'last_name',
+                    'sexe' => 'sexe',
+                    'naissanceAt' => 'naissance_at',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'users',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'pays' => [
+                        'fieldName' => 'pays',
+                        'joinColumns' => [
+                            [
+                                'name' => 'pays_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'users',
+                        'targetEntity' => 'App\\Entity\\Pays',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Users',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'pays_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'pays_id' => 'pays_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'pays_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'niveau' => [
+                        'fieldName' => 'niveau',
+                        'joinColumns' => [
+                            [
+                                'name' => 'niveau_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'usersNiveau',
+                        'targetEntity' => 'App\\Entity\\NiveauEnseignement',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Users',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'niveau_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'niveau_id' => 'niveau_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'niveau_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'enseigners' => [
+                        'fieldName' => 'enseigners',
+                        'mappedBy' => 'temoin',
+                        'targetEntity' => 'App\\Entity\\Enseigner',
+                        'cascade' => [],
+                        'orphanRemoval' => true,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Users',
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                    'profession' => [
+                        'fieldName' => 'profession',
+                        'joinColumns' => [
+                            [
+                                'name' => 'profession_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'users',
+                        'targetEntity' => 'App\\Entity\\Profession',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Users',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'profession_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'profession_id' => 'profession_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'profession_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'participations' => [
+                        'fieldName' => 'participations',
+                        'mappedBy' => 'temoin',
+                        'targetEntity' => 'App\\Entity\\Participation',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Users',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

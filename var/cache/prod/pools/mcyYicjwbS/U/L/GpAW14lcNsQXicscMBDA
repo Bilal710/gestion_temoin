@@ -1,0 +1,134 @@
+<?php //App.Entity.Users
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Users',
+                'firstName',
+                3 => 'lastName',
+                5 => 'sexe',
+                7 => 'naissanceAt',
+            ],
+            'defaultGroup' => [
+                'Users',
+            ],
+            'members' => [
+                [
+                    'firstName' => [
+                        $o[1],
+                    ],
+                    'lastName' => [
+                        $o[3],
+                    ],
+                    'sexe' => [
+                        $o[5],
+                    ],
+                    'naissanceAt' => [
+                        $o[7],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'firstName' => $o[1],
+                    'lastName' => $o[3],
+                    'sexe' => $o[5],
+                    'naissanceAt' => $o[7],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Users',
+                3 => 'App\\Entity\\Users',
+                5 => 'App\\Entity\\Users',
+                7 => 'App\\Entity\\Users',
+            ],
+            'property' => [
+                1 => 'firstName',
+                3 => 'lastName',
+                5 => 'sexe',
+                7 => 'naissanceAt',
+            ],
+            'constraints' => [
+                1 => [
+                    $o[2],
+                ],
+                3 => [
+                    $o[4],
+                ],
+                5 => [
+                    $o[6],
+                ],
+                7 => [
+                    $o[8],
+                ],
+            ],
+            'constraintsByGroup' => [
+                1 => [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'Users' => [
+                        $o[2],
+                    ],
+                ],
+                3 => [
+                    'Default' => [
+                        $o[4],
+                    ],
+                    'Users' => [
+                        $o[4],
+                    ],
+                ],
+                5 => [
+                    'Default' => [
+                        $o[6],
+                    ],
+                    'Users' => [
+                        $o[6],
+                    ],
+                ],
+                7 => [
+                    'Default' => [
+                        $o[8],
+                    ],
+                    'Users' => [
+                        $o[8],
+                    ],
+                ],
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Users',
+                ],
+                4 => [
+                    'Default',
+                    'Users',
+                ],
+                6 => [
+                    'Default',
+                    'Users',
+                ],
+                8 => [
+                    'Default',
+                    'Users',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

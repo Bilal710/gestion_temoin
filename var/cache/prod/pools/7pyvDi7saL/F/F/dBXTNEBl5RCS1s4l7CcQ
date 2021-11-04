@@ -1,0 +1,84 @@
+<?php //App_Entity_Apprenant
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Apprenant',
+                'id',
+                'firstName',
+                'lastName',
+                'Sexe',
+                'naissanceAt',
+                'pays',
+                'Niveau',
+                'profession',
+                'sexe',
+                'niveau',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'firstName' => $o[2],
+                    'lastName' => $o[3],
+                    'Sexe' => $o[4],
+                    'naissanceAt' => $o[5],
+                    'pays' => $o[6],
+                    'Niveau' => $o[7],
+                    'profession' => $o[8],
+                    'sexe' => $o[9],
+                    'niveau' => $o[10],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'read:appre',
+                ],
+                [
+                    'read:appre',
+                    'write:appre',
+                ],
+                [
+                    'read:appre',
+                    'write:appre',
+                ],
+                [
+                    'read:appre',
+                    'write:appre',
+                ],
+                [
+                    'read:appre',
+                    'write:appre',
+                ],
+                [
+                    'read:appre',
+                    'write:appre',
+                ],
+                [
+                    'read:appre',
+                    'write:appre',
+                ],
+                [
+                    'read:appre',
+                    'write:appre',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

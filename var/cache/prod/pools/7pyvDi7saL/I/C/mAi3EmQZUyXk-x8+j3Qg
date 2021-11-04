@@ -1,0 +1,83 @@
+<?php //App_Entity_Users
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Users',
+                'id',
+                'firstName',
+                'lastName',
+                'sexe',
+                'naissanceAt',
+                'pays',
+                'niveau',
+                'enseigners',
+                'profession',
+                'participations',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'firstName' => $o[2],
+                    'lastName' => $o[3],
+                    'sexe' => $o[4],
+                    'naissanceAt' => $o[5],
+                    'pays' => $o[6],
+                    'niveau' => $o[7],
+                    'enseigners' => $o[8],
+                    'profession' => $o[9],
+                    'participations' => $o[10],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'read:users',
+                ],
+                [
+                    'read:users',
+                    'write:users',
+                ],
+                [
+                    'read:users',
+                    'write:users',
+                ],
+                [
+                    'read:users',
+                    'write:users',
+                ],
+                [
+                    'read:users',
+                    'write:users',
+                ],
+                [
+                    'read:users',
+                    'write:users',
+                ],
+                [
+                    'read:users',
+                    'write:users',
+                ],
+                [
+                    'read:users',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

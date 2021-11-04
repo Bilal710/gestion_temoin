@@ -1,0 +1,112 @@
+<?php //App.Entity.Postes
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Length'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Length')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Regex'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Regex')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Postes',
+                'name',
+                3 => 'phoneNumber',
+            ],
+            'defaultGroup' => [
+                'Postes',
+            ],
+            'members' => [
+                [
+                    'name' => [
+                        $o[1],
+                    ],
+                    'phoneNumber' => [
+                        $o[3],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'name' => $o[1],
+                    'phoneNumber' => $o[3],
+                ],
+            ],
+            'class' => [
+                1 => 'App\\Entity\\Postes',
+                3 => 'App\\Entity\\Postes',
+            ],
+            'property' => [
+                1 => 'name',
+                3 => 'phoneNumber',
+            ],
+            'constraints' => [
+                1 => [
+                    $o[2],
+                ],
+                3 => [
+                    $o[4],
+                    $o[5],
+                ],
+            ],
+            'constraintsByGroup' => [
+                1 => [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'Postes' => [
+                        $o[2],
+                    ],
+                ],
+                3 => [
+                    'Default' => [
+                        $o[4],
+                        $o[5],
+                    ],
+                    'Postes' => [
+                        $o[4],
+                        $o[5],
+                    ],
+                ],
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Postes',
+                ],
+                4 => [
+                    'Default',
+                    'Postes',
+                ],
+                [
+                    'Default',
+                    'Postes',
+                ],
+            ],
+            'maxMessage' => [
+                4 => 'La taille maximum est de 8',
+            ],
+            'minMessage' => [
+                4 => 'La taille mininimum est de 8',
+            ],
+            'max' => [
+                4 => 8,
+            ],
+            'min' => [
+                4 => 8,
+            ],
+            'message' => [
+                5 => 'number_only',
+            ],
+            'pattern' => [
+                5 => '/^[0-9]*$/',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

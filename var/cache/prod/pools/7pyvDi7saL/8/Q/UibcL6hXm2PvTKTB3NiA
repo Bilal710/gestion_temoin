@@ -1,0 +1,80 @@
+<?php //App_Entity_Postes
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Postes',
+                'id',
+                'name',
+                'adrress',
+                'firstDay',
+                'secondDay',
+                'createdAt',
+                'postPays',
+                'enseigners',
+                'phoneNumber',
+                'adrresse',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'name' => $o[2],
+                    'adrress' => $o[3],
+                    'firstDay' => $o[4],
+                    'secondDay' => $o[5],
+                    'createdAt' => $o[6],
+                    'postPays' => $o[7],
+                    'enseigners' => $o[8],
+                    'phoneNumber' => $o[9],
+                    'adrresse' => $o[10],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'read:postes',
+                ],
+                [
+                    'read:postes',
+                    'write:postes',
+                ],
+                [
+                    'read:postes',
+                    'write:postes',
+                ],
+                [
+                    'read:postes',
+                    'write:postes',
+                ],
+                [
+                    'read:postes',
+                    'write:postes',
+                ],
+                [
+                    'read:postes',
+                    'write:postes',
+                ],
+                [
+                    'read:postes',
+                    'write:postes',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
