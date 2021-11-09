@@ -14,8 +14,10 @@ class AdminUser implements UserInterface, PasswordAuthenticatedUserInterface
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
      * @ORM\Column(type="integer")
+     * @ORM\SequenceGenerator(sequenceName="message_seq", initialValue=1, allocationSize=100)
+
      */
     private $id;
 

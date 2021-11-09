@@ -10,20 +10,13 @@ use Symfony\Component\Serializer\Annotation\Groups;
 /**
  * @ORM\Entity(repositoryClass=ApprenantRepository::class)
  */
-#[ApiResource(
-    normalizationContext:['groups'=>['read:appre']],
-    denormalizationContext:['groups'=>['write:appre']],
-    itemOperations: [
-        'get',
-        'patch',
-        'delete'
-    ]
-)]
-class Apprenant 
+
+class Apprenant
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="message_seq1", initialValue=1, allocationSize=100)
      * @ORM\Column(type="integer")
      * @Groups({"read:appre"})
      */

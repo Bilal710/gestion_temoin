@@ -18,20 +18,12 @@ use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
  * @ORM\Entity(repositoryClass=PostesRepository::class)
  */
 
-#[ApiResource(
-    normalizationContext: ['groups'=>['read:postes']],
-    denormalizationContext: ['groups'=>['write:postes']],
-    itemOperations: [
-        'get',
-        'delete',
-        'patch'
-    ],
-)]
 class Postes
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="message_seq6", initialValue=1, allocationSize=100)
      * @ORM\Column(type="integer")
      * @Groups({"read:postes"})
      */
@@ -69,7 +61,7 @@ class Postes
      */
     private $createdAt;
 
-   
+
 
     /**
      * @ORM\ManyToOne(targetEntity=Pays::class, inversedBy="postes")

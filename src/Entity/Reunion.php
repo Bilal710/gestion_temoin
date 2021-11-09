@@ -15,6 +15,8 @@ class Reunion
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="message_seq8", initialValue=1, allocationSize=100)
      * @ORM\Column(type="integer")
      */
     private $id;
@@ -105,6 +107,6 @@ class Reunion
 
     public function __toString()
     {
-        return $this->type.' '.date_format($this->reunionAt,'d-m-Y H:i');
+        return $this->type . ' ' . date_format($this->reunionAt, 'd-m-Y H:i');
     }
 }

@@ -14,20 +14,12 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\Entity(repositoryClass=UsersRepository::class)
  */
-#[ApiResource(
-    normalizationContext: ['groups'=>['read:users']],
-    denormalizationContext: ['groups' => ['write:users']],
-    itemOperations: [
-        'get',
-        'delete',
-        'patch'
-    ],
-)]
 class Users
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="message_seq9", initialValue=1, allocationSize=100)
      * @ORM\Column(type="integer")
      * @Groups({"read:users"})
      */
@@ -213,7 +205,7 @@ class Users
 
     public function __toString()
     {
-        return $this->firstName.' '.$this->lastName;
+        return $this->firstName . ' ' . $this->lastName;
     }
 
     public function getProfession(): ?Profession
@@ -257,5 +249,4 @@ class Users
 
         return $this;
     }
-
 }

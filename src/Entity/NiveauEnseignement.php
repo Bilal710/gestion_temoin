@@ -13,21 +13,14 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\Entity(repositoryClass=NiveauEnseignementRepository::class)
  */
-#[ApiResource(
-    normalizationContext: ['groups'=>['read:niveau']],
-    denormalizationContext: ['groups' => ['write:niveau']],
-    itemOperations: [
-        'get',
-        'delete',
-        'patch'
-    ],
-)]
+
 
 class NiveauEnseignement
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="message_seq3", initialValue=1, allocationSize=100)
      * @ORM\Column(type="integer")
      * @Groups({"read:niveau"})
      */

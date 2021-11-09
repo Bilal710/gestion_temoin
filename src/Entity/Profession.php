@@ -13,12 +13,14 @@ use Symfony\Component\Serializer\Annotation\Groups;
 /**
  * @ORM\Entity(repositoryClass=ProfessionRepository::class)
  */
-#[ApiResource]
+
 class Profession
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="message_seq7", initialValue=1, allocationSize=100)
+
      * @ORM\Column(type="integer")
      */
     private $id;

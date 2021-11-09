@@ -17,23 +17,14 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=EnseignerRepository::class)
  */
-#[ApiResource(
-    normalizationContext: ['groups' => ['read']],
-    denormalizationContext: ['groups' => ['write']],    
-    itemOperations: [
-        'get',
-        'delete',
-        'patch'
-    ],
-)]
-#[ApiFilter(SearchFilter::class, properties: ['temoin'=>'exact'],)]
-#[ApiFilter(DateFilter::class, properties: ['startAt','endAt'],)]
+
 
 class Enseigner
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="message_seq2", initialValue=1, allocationSize=100)
      * @ORM\Column(type="integer")
      * @Groups({"read"})
      */

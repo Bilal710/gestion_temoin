@@ -19,7 +19,8 @@ class Participation
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="message_seq4", initialValue=1, allocationSize=100)
      * @ORM\Column(type="integer")
      */
     private $id;

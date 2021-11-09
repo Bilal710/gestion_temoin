@@ -5654,16 +5654,10 @@
     </service>
     <service id="api_platform.filter_locator" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_date_filter" type="service_closure" id="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_date_filter"/>
-        <argument key="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_search_filter" type="service_closure" id="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_search_filter"/>
-      </argument>
+      <argument type="collection"/>
     </service>
     <service id="api_platform.filter_collection_factory" class="ApiPlatform\Core\Api\FilterCollectionFactory">
-      <argument type="collection">
-        <argument>annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_search_filter</argument>
-        <argument>annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_date_filter</argument>
-      </argument>
+      <argument type="collection"/>
     </service>
     <service id="api_platform.filters" class="ApiPlatform\Core\Api\FilterCollection">
       <argument type="service" id="api_platform.filter_locator"/>
@@ -6994,8 +6988,6 @@
         <argument key="Symfony\Contracts\Translation\TranslatorInterface" type="service_closure" id="translator.data_collector" on-invalid="ignore_uninitialized"/>
         <argument key="Twig\Environment" type="service_closure" id="twig" on-invalid="ignore_uninitialized"/>
         <argument key="Twig_Environment" type="service_closure" id="twig" on-invalid="ignore_uninitialized"/>
-        <argument key="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_date_filter" type="service_closure" id="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_date_filter" on-invalid="ignore_uninitialized"/>
-        <argument key="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_search_filter" type="service_closure" id="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_search_filter" on-invalid="ignore_uninitialized"/>
         <argument key="annotation_reader" type="service_closure" id="annotations.cached_reader" on-invalid="ignore_uninitialized"/>
         <argument key="annotations.cache" type="service_closure" id="annotations.cache" on-invalid="ignore_uninitialized"/>
         <argument key="annotations.cache_adapter" type="service_closure" id="annotations.cache_adapter" on-invalid="ignore_uninitialized"/>
@@ -7916,30 +7908,6 @@
       <argument>^/((index|app(_[\w]+)?)\.php/)?_wdt</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
       <argument>null</argument>
-    </service>
-    <service id="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_search_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter" autowire="true">
-      <tag name="api_platform.filter"/>
-      <argument type="service" id="doctrine"/>
-      <argument>null</argument>
-      <argument type="service" id="api_platform.iri_converter"/>
-      <argument type="service" id="property_accessor"/>
-      <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument type="collection">
-        <argument key="temoin">exact</argument>
-      </argument>
-      <argument type="service" id="api_platform.identifiers_extractor.cached" on-invalid="ignore"/>
-      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
-    </service>
-    <service id="annotated_app_entity_enseigner_api_platform_core_bridge_doctrine_orm_filter_date_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\DateFilter" autowire="true">
-      <tag name="api_platform.filter"/>
-      <argument type="service" id="doctrine"/>
-      <argument>null</argument>
-      <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument type="collection">
-        <argument key="startAt">null</argument>
-        <argument key="endAt">null</argument>
-      </argument>
-      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
     </service>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\ApprenantCrudController" class="App\Controller\Admin\ApprenantCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\ApprenantCrudController" class="App\Controller\Admin\ApprenantCrudController" autowire="true" abstract="true"/>
@@ -10470,7 +10438,7 @@
     <service id="api_platform.metadata.property.name_collection_factory.cached.inner" alias="api_platform.metadata.property.name_collection_factory.yaml"/>
     <service id="api_platform.metadata.property.metadata_factory.cached.inner" alias="api_platform.metadata.property.metadata_factory.validator"/>
     <service id=".service_locator.bnaLdkn" alias="api_platform.serializer_locator"/>
-    <service id=".service_locator.ENn7a8Y" alias="api_platform.filter_locator"/>
+    <service id=".service_locator.Xbsa8iG" alias="api_platform.filter_locator"/>
     <service id=".service_locator.Mo0FXEU" alias="service_locator_EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     <service id=".service_locator._5g_Wvc" alias=".service_locator.KfwZsne"/>
     <service id=".service_locator.JBAFp66" alias=".service_locator.KfbR3DY"/>
