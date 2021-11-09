@@ -898,6 +898,6 @@ class __TwigTemplate_789209549c0466d83c16fb0ec40f632db7b3ae6c4f61514ec35beb8e21b
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

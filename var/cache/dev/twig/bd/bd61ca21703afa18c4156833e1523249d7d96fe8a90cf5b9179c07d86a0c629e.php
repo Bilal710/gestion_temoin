@@ -102,6 +102,6 @@ class __TwigTemplate_ea36b3a367280d9dd01b1b5c80b7087cc3b2cc8952193cb2a42a6376a90
         {{ field.formattedValue }}
     {% endif %}
 {% endif %}
-", "@EasyAdmin/crud/field/association.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/association.html.twig");
+", "@EasyAdmin/crud/field/association.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/association.html.twig");
     }
 }

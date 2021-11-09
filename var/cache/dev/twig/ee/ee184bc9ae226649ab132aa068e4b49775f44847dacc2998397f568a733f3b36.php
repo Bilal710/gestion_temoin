@@ -482,6 +482,6 @@ class __TwigTemplate_8b2f33184cc17766858736dc89cbccd7d8209de329929628cf2ac93559c
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

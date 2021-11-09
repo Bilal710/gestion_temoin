@@ -145,6 +145,6 @@ class __TwigTemplate_1455caf3d0af297db5dd2250e00f5c5e284b67bf1ada70ad80f65ecccdf
         <img src=\"{{ asset(image) }}\">
     </div>
 {% endfor %}
-", "@EasyAdmin/crud/field/image.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/image.html.twig");
+", "@EasyAdmin/crud/field/image.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/image.html.twig");
     }
 }

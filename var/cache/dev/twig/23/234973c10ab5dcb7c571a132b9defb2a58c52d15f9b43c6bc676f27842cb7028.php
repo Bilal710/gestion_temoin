@@ -104,6 +104,6 @@ class __TwigTemplate_22d8a9cd1290bcef93e33a945a7d626e0140595b5141e33e799e1ca48e4
 {% if field.customOptions.get('showName') %}
     {{ field.formattedValue.name }}
 {% endif %}
-", "@EasyAdmin/crud/field/currency.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/currency.html.twig");
+", "@EasyAdmin/crud/field/currency.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/currency.html.twig");
     }
 }

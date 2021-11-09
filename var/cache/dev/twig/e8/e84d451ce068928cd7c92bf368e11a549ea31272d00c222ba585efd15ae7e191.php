@@ -125,6 +125,6 @@ class __TwigTemplate_139654e8b707b9b6d080f329d16bd5c4faeb265d89e74f346309d478685
 .exception-message-wrapper .container {
     min-height: unset;
 }
-", "@WebProfiler/Collector/exception.css.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
     }
 }

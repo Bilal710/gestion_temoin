@@ -417,6 +417,6 @@ class __TwigTemplate_a9c37e88ee1627f41cbc1663aec6e23b95e8e4673e35a089c207f5ddc67
         </a>
     {% endif %}
 {% endmacro %}
-", "@EasyAdmin/menu.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/menu.html.twig");
+", "@EasyAdmin/menu.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/menu.html.twig");
     }
 }

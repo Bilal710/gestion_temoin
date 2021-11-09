@@ -134,6 +134,6 @@ class __TwigTemplate_ef8afbf2d3f5d84b4d31204db37dc23d9c26d3cc6d844866a38f742aabc
             margin-top: -10px;
         }
     </style>
-{% endblock %}", "@EasyAdmin/crud/index.html.twig", "/home/yacoubou/Bureau/roixdepaix/templates/bundles/EasyAdminBundle/crud/index.html.twig");
+{% endblock %}", "@EasyAdmin/crud/index.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/templates/bundles/EasyAdminBundle/crud/index.html.twig");
     }
 }

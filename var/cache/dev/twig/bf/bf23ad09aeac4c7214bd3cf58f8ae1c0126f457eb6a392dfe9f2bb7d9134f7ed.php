@@ -103,6 +103,6 @@ class __TwigTemplate_58755f30ad6bd88eeb5b2695613dccff8da28000117c83bb7049a2672c3
         {{ render_as_html ? field.formattedValue|raw : field.formattedValue|striptags }}
     </span>
 {% endif %}
-", "@EasyAdmin/crud/field/textarea.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/textarea.html.twig");
+", "@EasyAdmin/crud/field/textarea.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/textarea.html.twig");
     }
 }

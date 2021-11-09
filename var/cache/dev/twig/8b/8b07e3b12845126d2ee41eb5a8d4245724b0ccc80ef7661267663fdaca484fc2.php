@@ -72,6 +72,6 @@ class __TwigTemplate_e7b9e3ab5c4ede20357c6e2b461a7f145845eee4fe3163d029d67b972cd
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
 {{ field.formattedValue }}
-", "@EasyAdmin/crud/field/hidden.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/hidden.html.twig");
+", "@EasyAdmin/crud/field/hidden.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/hidden.html.twig");
     }
 }

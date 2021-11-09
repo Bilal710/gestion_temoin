@@ -91,6 +91,6 @@ class __TwigTemplate_8f1f1fc5a6a2ad87d55db267e1a25f11ab07f7a6d0943305141e04bf46b
 {% if field.customOptions.get('showName') %}
     {{ field.formattedValue ?? '' }}
 {% endif %}
-", "@EasyAdmin/crud/field/locale.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/locale.html.twig");
+", "@EasyAdmin/crud/field/locale.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/locale.html.twig");
     }
 }

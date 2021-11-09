@@ -1306,6 +1306,6 @@ $context["voter_detail"], "vote", [], "array", false, false, false, 357) == twig
         </table>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
+", "@Security/Collector/security.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
     }
 }

@@ -73,6 +73,6 @@ class __TwigTemplate_972e9a9e5ec0817760a3889799dedbfc0303865443b511acdf7608a7330
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
 {# this template is used to display Doctrine entity primary keys #}
 {{ field.formattedValue }}
-", "@EasyAdmin/crud/field/id.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/id.html.twig");
+", "@EasyAdmin/crud/field/id.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/id.html.twig");
     }
 }

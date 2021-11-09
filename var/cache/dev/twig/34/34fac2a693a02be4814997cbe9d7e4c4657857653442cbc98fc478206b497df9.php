@@ -81,6 +81,6 @@ class __TwigTemplate_66a95fe4aba55858be0b43d5d2c4fe8a4244ca5237b562ac62b538bb112
 <span class=\"badge badge-danger\" title=\"{{ 'label.inaccessible.explanation'|trans }}\">
     {{ 'label.inaccessible'|trans }}
 </span>
-", "@EasyAdmin/label/inaccessible.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/easycorp/easyadmin-bundle/src/Resources/views/label/inaccessible.html.twig");
+", "@EasyAdmin/label/inaccessible.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/easycorp/easyadmin-bundle/src/Resources/views/label/inaccessible.html.twig");
     }
 }

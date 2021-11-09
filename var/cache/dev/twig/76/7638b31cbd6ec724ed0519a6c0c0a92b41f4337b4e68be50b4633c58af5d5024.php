@@ -171,6 +171,6 @@ class __TwigTemplate_5388ef8f0a40fe7ffe17aaae3a66a7bc2853980439fcda0edc28f3cc299
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/yacoubou/Bureau/roixdepaix/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/yacoubou/Bureau/Solutech/gestion_temoin/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }
