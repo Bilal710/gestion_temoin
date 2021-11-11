@@ -18,8 +18,7 @@ class Users
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="message_seq9", initialValue=1, allocationSize=100)
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      * @Groups({"read:users"})
      */

@@ -22,8 +22,7 @@ class Postes
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="message_seq6", initialValue=1, allocationSize=100)
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      * @Groups({"read:postes"})
      */

@@ -18,8 +18,7 @@ class Pays
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="SEQUENCE")
-     * @ORM\SequenceGenerator(sequenceName="message_seq5", initialValue=1, allocationSize=100)
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      * @Groups({"read:Pays"})
      */
