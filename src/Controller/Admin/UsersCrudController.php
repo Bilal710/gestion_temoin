@@ -37,11 +37,11 @@ class UsersCrudController extends AbstractCrudController
             TextField::new('lastName'),
             ChoiceField::new('sexe')
                 ->setChoices(['M' => 'M', 'F' => 'F']),
+            DateTimeField::new('naissanceAt'),
             AssociationField::new('pays', 'Pays'),
             AssociationField::new('niveau', 'Niveau d\'enseignement'),
             TelephoneField::new('phoneNumber', 'Numéro de Téléphone'),
             AssociationField::new('profession', 'Profession'),
-            DateTimeField::new('naissanceAt')
         ];
     }
 }
