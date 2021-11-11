@@ -12,6 +12,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\Field;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TelephoneField;
 
 class UsersCrudController extends AbstractCrudController
 {
@@ -26,9 +27,7 @@ class UsersCrudController extends AbstractCrudController
             ->setPageTitle('index', 'Liste des témoins')
             ->setEntityLabelInSingular('Témoins')
             ->setEntityLabelInPlural('Témoins')
-            ->setDefaultSort(['id' => 'ASC']) 
-
-        ;
+            ->setDefaultSort(['id' => 'ASC']);
     }
 
     public function configureFields(string $pageName): iterable
@@ -38,10 +37,11 @@ class UsersCrudController extends AbstractCrudController
             TextField::new('lastName'),
             ChoiceField::new('sexe')
                 ->setChoices(['M' => 'M', 'F' => 'F']),
-            DateTimeField::new('naissanceAt'),
-            AssociationField::new('pays','Pays'),
-            AssociationField::new('niveau','Niveau d\'enseignement'),
-            AssociationField::new('profession','Profession')
+            AssociationField::new('pays', 'Pays'),
+            AssociationField::new('niveau', 'Niveau d\'enseignement'),
+            TelephoneField::new('phoneNumber', 'Numéro de Téléphone'),
+            AssociationField::new('profession', 'Profession'),
+            DateTimeField::new('naissanceAt')
         ];
     }
 }
