@@ -20,35 +20,30 @@ class Users
      * @ORM\Id
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @Groups({"read:users"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"read:users","write:users"})
      * @Assert\NotBlank()
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"read:users","write:users"})
      * @Assert\NotBlank()
      */
     private $lastName;
 
 
     /**
-     * @ORM\Column(type="string", length=1)
-     * @Groups({"read:users","write:users"})
+     * @ORM\Column(type="string", length=1, nullable=true)
      * @Assert\NotBlank()
      */
     private $sexe;
 
     /**
      * @ORM\Column(type="datetime")
-     * @Groups({"read:users","write:users"})
      * @Assert\NotBlank()
      */
     private $naissanceAt;
@@ -56,21 +51,19 @@ class Users
 
     /**
      * @ORM\ManyToOne(targetEntity=Pays::class, inversedBy="users")
-     * @ORM\JoinColumn(nullable=false)
-     * @Groups({"read:users","write:users"})
+     * @ORM\JoinColumn(nullable=true)
      */
     private $pays;
 
     /**
      * @ORM\ManyToOne(targetEntity=NiveauEnseignement::class, inversedBy="usersNiveau")
-     * @ORM\JoinColumn(nullable=false)
-     * @Groups({"read:users","write:users"})
+     * @ORM\JoinColumn(nullable=true)
      */
     private $niveau;
 
     /**
      * @ORM\OneToMany(targetEntity=Enseigner::class, mappedBy="temoin", orphanRemoval=true)
-     * @Groups({"read:users"})
+     * @ORM\JoinColumn(nullable=true)
      */
     private $enseigners;
 
@@ -79,10 +72,18 @@ class Users
      */
     private $profession;
 
+
     /**
      * @ORM\OneToMany(targetEntity=Participation::class, mappedBy="temoin")
      */
     private $participations;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Length(min = 8, max = 8, minMessage = "La taille mininimum est de 8", maxMessage = "La taille maximum est de 8")
+     * @Assert\Regex(pattern="/^[0-9]*$/", message="number_only")
+     */
+    private $phoneNumber;
 
     public function __construct()
     {
@@ -245,6 +246,18 @@ class Users
                 $participation->setTemoin(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getPhoneNumber(): ?string
+    {
+        return $this->phoneNumber;
+    }
+
+    public function setPhoneNumber(?string $phoneNumber): self
+    {
+        $this->phoneNumber = $phoneNumber;
 
         return $this;
     }
